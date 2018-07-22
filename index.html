@@ -6,11 +6,62 @@
     <title>Unity WebGL Player | Hammer Impact</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webgl.json", {onProgress: UnityProgress});
     </script>
+    <style>
+      #ad
+      {
+          display:block;
+          font-family: Helvetica, Verdana, Arial, sans-serif;
+          box-sizing:border-box;
+          transition-duration:0.5s;
+          padding-top:20px;
+          padding-bottom:20px;
+      }
+      #ad h4
+      {
+        text-align: right;
+        display: block;
+      }
+      #ad div
+      {
+        padding:10px;
+        display:block;
+        width:500px;
+        overflow:auto;
+        float:right;
+        margin:10px;
+        box-shadow:1px 1px 10px #3D3D3D;
+      }
+      #ad ab
+      {
+        float:left;
+        display:inline-block;
+        padding:14px;
+      }
+      #ad a
+      {
+        float: right;
+        display:inline-block;
+        padding:10px;
+        text-decoration:none;
+        border:1px solid black;
+        border-radius:3px;
+        border-color:#239B56;
+        color:#239B56;
+      }
+      #ad a:hover
+      {
+        background-color:#B7B7B7;
+      }
+      #ad a:active
+      {
+        background-color:#696969;
+      }
+    </style>
   </head>
   <body>
     <div class="webgl-content">
@@ -19,6 +70,10 @@
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">Hammer Impact</div>
+      </div>
+      <div id="ad">
+        <h4>or download for android</h4>
+        <div><ab>Hammer Impact</ab><a href="sample.apk" Download>Download</a></div>
       </div>
     </div>
   </body>
